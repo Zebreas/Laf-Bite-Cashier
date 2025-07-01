@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplikasi Kasir Laf Bite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kasir Laf Bite</h1>
+  <form id="kasirForm">
+    <label>Nama Pembeli: <input type="text" id="namaPembeli"></label>
+    <label>No. WhatsApp: <input type="text" id="waPembeli"></label>
+  
+    <label>Cari Menu: <input type="text" id="searchMenu" placeholder="Cari menu..."></label>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Menu</th>
+            <th>Harga</th>
+            <th>Qty</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="menuList">
+          <!-- Diisi oleh JavaScript -->
+        </tbody>
+      </table>
+    </div>
+    
+  
+    <h3>Total: Rp <span id="grandTotal">0</span></h3>
+  
+    <button type="submit">Cetak Struk</button>
+    <button type="button" id="kirimWA">Kirim via WhatsApp</button>
+    <button type="button" id="resetForm">Reset</button>
+  </form>    
+  <script src="app.js"></script>
+</body>
+</html>
